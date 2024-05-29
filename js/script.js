@@ -3,6 +3,10 @@ document.querySelector('.boton-volver').addEventListener('click', function(event
     // Vuelve a la página anterior en el historial del navegador
     window.history.back();
 });
+                        //Barra deslizadora//
+document.getElementById('slider').addEventListener('input', function() {
+    this.nextElementSibling.value = this.value;
+});
 
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
