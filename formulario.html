@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -8,12 +9,25 @@
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .form-label {
+        font-weight: bold;
+      }
+
+      .form-check-inline {
+        margin-right: 10px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
       <div class="container">
         <a href="#" class="navbar-brand">
-          <span class="text-dark">Nutri</span>Tech
+          <span class="text-light">Nutri</span>Tech
         </a>
         <button
           class="navbar-toggler"
@@ -31,10 +45,6 @@
             <li class="nav-item">
               <a href="index.html" class="nav-link">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a href="formulario.html" class="nav-link">Formulario</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -141,7 +151,7 @@
                   </div>
                   <div class="mb-3">
                     <label for="mejorar" class="form-label"
-                      >¿Que tanto te gusto el producto?</label
+                      >¿Qué tanto te gustó el producto?</label
                     ><br />
                     <input
                       type="range"
@@ -151,6 +161,7 @@
                       max="100"
                       value="50"
                       oninput="this.nextElementSibling.value = this.value"
+                      class="form-range"
                     />
                     <output>50</output>
                   </div>
@@ -179,7 +190,7 @@
       </div>
     </section>
 
-    <footer class="text-center text-white p-3 mt-5">
+    <footer class="text-center text-white p-3 mt-5 bg-dark">
       <div class="container">
         <p>Todos los derechos reservados &copy; 2024 NutriTech</p>
       </div>

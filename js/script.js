@@ -1,6 +1,6 @@
 
 // Agrega un evento al botón con la clase 'boton-volver' para volver a la página anterior
-document.querySelector('.boton-volver').addEventListener('click', function(event) {
+document.querySelector('.boton-volver').addEventListener('click', function (event) {
     event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
     // Vuelve a la página anterior en el historial del navegador
     window.history.back();
@@ -63,23 +63,5 @@ function iniciarSesion() {
     }
 }
 
-/**
- * Muestra el formulario de registro y ajusta la visibilidad y opacidad
- * de las cajas traseras dependiendo del ancho de la ventana.
- */
-function register() {
-    if (window.innerWidth > 850) { // Si el ancho de la ventana es mayor a 850px
-        formulario_register.style.display = "block";
-        contenedor_login_register.style.left = "410px";
-        formulario_login.style.display = "none";
-        caja_trasera_register.style.opacity = "0";
-        caja_trasera_login.style.opacity = "1";
-    } else { // Si el ancho de la ventana es menor o igual a 850px
-        formulario_register.style.display = "block";
-        contenedor_login_register.style.left = "0px";
-        formulario_login.style.display = "none";
-        caja_trasera_register.style.display = "none";
-        caja_trasera_login.style.display = "block";
-        caja_trasera_login.style.opacity = "1";
-    }
-}
+
+
