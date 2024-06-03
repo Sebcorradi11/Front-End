@@ -8,8 +8,6 @@ document.querySelector('.boton-volver').addEventListener('click', function (even
 
 // Agrega eventos a los botones de iniciar sesión y registrarse
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
-document.getElementById("btn__registrarse").addEventListener("click", register);
-
 // Agrega un evento para redimensionar la ventana que llama a la función anchoPagina
 window.addEventListener("resize", anchoPagina);
 
